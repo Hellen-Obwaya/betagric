@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "536739893720",
+    "firebase_url": "https://betagric-a3f86-default-rtdb.firebaseio.com",
+    "project_id": "betagric-a3f86",
+    "storage_bucket": "betagric-a3f86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536739893720:android:8e163b7075b268064d62ad",
+        "android_client_info": {
+          "package_name": "com.example.beta_agric"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536739893720-kuvgnr978d0kv929ijner21oeicda3kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFXjcmjFaxHwKKGtcz-YARLnIijyjlSD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536739893720-kuvgnr978d0kv929ijner21oeicda3kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
