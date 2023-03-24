@@ -1,5 +1,6 @@
 import 'package:beta_agric/screens/donate_form.dart';
 import 'package:beta_agric/screens/donations.dart';
+import 'package:beta_agric/widgets/events_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -104,7 +105,7 @@ class EventsList extends StatelessWidget {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const Donations(),
+                            builder: (context) => const EventsCard(),
                           ));
                         },
                         child: Container(
@@ -137,7 +138,7 @@ class EventsList extends StatelessWidget {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const Donate(),
+                            builder: (context) => const EventsCard(),
                           ));
                         },
                         child: Container(
@@ -169,7 +170,7 @@ class EventsList extends StatelessWidget {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const Donations(),
+                            builder: (context) => const EventsCard(),
                           ));
                         },
                         child: Container(
@@ -200,9 +201,9 @@ class EventsList extends StatelessWidget {
                       //FORTH CONTAINER
                       InkWell(
                         onTap: () {
-                          //Navigator.of(context).push(MaterialPageRoute(
-                          //  builder: (context) => const Donations(),
-                          //));
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const EventsCard(),
+                          ));
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
