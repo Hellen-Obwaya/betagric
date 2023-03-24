@@ -51,37 +51,40 @@ class Donations extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Container(
-                        height: 55.0,
-                        width: 55.0,
-                        color: Colors.grey,
-                        child: CircleAvatar(
-                          backgroundColor: Colors.grey,
-                          backgroundImage: AssetImage("images/seedlings.jpg"),
-                        ),
-                      ),
-                      SizedBox(width: 0.5),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text(
-                            trees[index],
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20),
+                  Expanded(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Container(
+                          height: 55.0,
+                          width: 55.0,
+                          color: Colors.grey,
+                          child: CircleAvatar(
+                            backgroundColor: Colors.grey,
+                            backgroundImage: AssetImage("images/seedlings.jpg"),
                           ),
-                          Text(
-                            location[index],
-                            style: TextStyle(color: Colors.grey, fontSize: 18),
-                          )
-                        ],
-                      )
-                    ],
+                        ),
+                        SizedBox(width: 0.5),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              trees[index],
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20),
+                            ),
+                            Text(
+                              location[index],
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 18),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                   Container(
                     width: Get.width * .20,
