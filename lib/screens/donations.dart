@@ -40,14 +40,16 @@ class Donations extends StatelessWidget {
         title: const Text(
           "Donations",
           style: TextStyle(
-              color: Colors.white, fontSize: 20, fontWeight: FontWeight.w100),
+              color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 41, 180, 73),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25))),
+                bottomRight: Radius.circular(25),
+                topLeft: Radius.circular(25),
+                topRight: Radius.circular(25))),
       ),
       body: ListView.builder(
         itemCount: 10,
@@ -132,6 +134,10 @@ class Donations extends StatelessWidget {
         onPressed: () {
           Get.to(() => Donate());
         },
+        child: Text(
+          "Donate",
+          style: TextStyle(color: Colors.black, fontSize: 15),
+        ),
         backgroundColor: Color.fromARGB(255, 41, 180, 73),
       ),
     );
