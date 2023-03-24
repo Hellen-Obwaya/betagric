@@ -128,6 +128,12 @@ class Donations extends StatelessWidget {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton.small(
+        onPressed: () {
+          Get.to(() => Donate());
+        },
+        backgroundColor: Color.fromARGB(255, 41, 180, 73),
+      ),
     );
   }
 }
