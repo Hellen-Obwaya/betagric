@@ -35,6 +35,19 @@ class Donations extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          "Donations",
+          style: TextStyle(
+              color: Colors.white, fontSize: 20, fontWeight: FontWeight.w100),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.green,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25))),
+      ),
       body: ListView.builder(
         itemCount: 10,
         shrinkWrap: true,
@@ -96,7 +109,7 @@ class Donations extends StatelessWidget {
                           foregroundColor:
                               MaterialStateProperty.all<Color>(Colors.white),
                           backgroundColor: MaterialStateProperty.all<Color>(
-                              Color.fromARGB(255, 28, 131, 52)),
+                              Color.fromARGB(255, 41, 180, 73)),
                           shape:
                               MaterialStateProperty.all<RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
