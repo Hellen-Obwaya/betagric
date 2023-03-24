@@ -75,7 +75,7 @@ class Donations extends StatelessWidget {
                         Container(
                           height: 55.0,
                           width: 55.0,
-                          color: Colors.grey,
+                          color: Colors.grey[100],
                           child: CircleAvatar(
                             backgroundColor: Colors.grey,
                             backgroundImage: AssetImage("images/seedlings.jpg"),

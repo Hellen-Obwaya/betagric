@@ -57,11 +57,11 @@ class EventsList extends StatelessWidget {
                       flex: 2,
                       child: Container(
                         decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage("images/eggs.jpg"),
-                              fit: BoxFit.cover,
-                              alignment: Alignment.centerRight),
-                        ),
+                            image: DecorationImage(
+                                image: AssetImage("images/eggs.jpg"),
+                                fit: BoxFit.cover,
+                                alignment: Alignment.centerRight),
+                            borderRadius: BorderRadius.circular(10)),
                       ),
                     ),
                     //text section
