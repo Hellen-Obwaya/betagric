@@ -24,18 +24,20 @@ class _DonateState extends State<Donate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 212, 242, 178),
       //APPBAR
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Text("Donate"),
         leading: IconButton(
-          icon: Icon(Icons.filter_vintage),
+          icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
         ),
       ),
       //body
       body: Padding(
         padding: EdgeInsets.all(16),
+
         //form
         child: Form(
           key: _formKey,

@@ -52,12 +52,12 @@ class PopUp extends StatelessWidget {
                     foregroundColor:
                         MaterialStateProperty.all<Color>(Colors.white),
                     backgroundColor: MaterialStateProperty.all<Color>(
-                        Color.fromARGB(255, 112, 132, 142)),
+                        Color.fromARGB(255, 41, 180, 73)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                             side: BorderSide(
-                              color: Color.fromARGB(255, 201, 193, 193),
+                              color: Color.fromARGB(255, 41, 180, 73),
                             )))),
                 onPressed: () {
                   Get.to(() => Dashboard());

@@ -46,10 +46,10 @@ class Donations extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 41, 180, 73),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-                topLeft: Radius.circular(25),
-                topRight: Radius.circular(25))),
+                bottomLeft: Radius.circular(5),
+                bottomRight: Radius.circular(5),
+                topLeft: Radius.circular(5),
+                topRight: Radius.circular(5))),
       ),
       body: ListView.builder(
         itemCount: 10,
@@ -138,7 +138,7 @@ class Donations extends StatelessWidget {
           "Donate",
           style: TextStyle(color: Colors.black, fontSize: 15),
         ),
-        backgroundColor: Color.fromARGB(255, 41, 180, 73),
+        backgroundColor: Color.fromARGB(255, 228, 236, 239),
       ),
     );
   }
