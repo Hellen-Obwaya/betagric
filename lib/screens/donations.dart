@@ -35,6 +35,7 @@ class Donations extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 212, 242, 178),
       appBar: AppBar(
         title: const Text(
           "Donations",
@@ -42,7 +43,7 @@ class Donations extends StatelessWidget {
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.w100),
         ),
         centerTitle: true,
-        backgroundColor: Colors.green,
+        backgroundColor: Color.fromARGB(255, 41, 180, 73),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(25),
