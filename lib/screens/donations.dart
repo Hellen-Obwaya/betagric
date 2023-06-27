@@ -130,15 +130,41 @@ class Donations extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton.small(
-        onPressed: () {
-          Get.to(() => Donate());
-        },
-        child: Text(
-          "Donate",
-          style: TextStyle(color: Colors.black, fontSize: 15),
+      //floating action button
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Color.fromARGB(255, 201, 193, 193),
+        child: IconButton(
+          onPressed: () {
+            Get.to(() => Donate());
+          },
+          icon: Icon(Icons.add, color: Colors.black),
         ),
-        backgroundColor: Color.fromARGB(255, 228, 236, 239),
+      ),
+
+      //FAB LOCATION
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+
+      //BOTTOM NAV BAR WITH FAB
+      bottomNavigationBar: BottomAppBar(
+        color: Color.fromARGB(255, 201, 193, 193),
+        shape: CircularNotchedRectangle(),
+        notchMargin: 6,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            IconButton(
+              onPressed: () {
+                Get.to(() => Dashboard());
+              },
+              icon: Icon(
+                Icons.search,
+                color: Color.fromARGB(255, 41, 180, 73),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
