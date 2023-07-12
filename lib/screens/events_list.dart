@@ -1,3 +1,4 @@
+import 'package:beta_agric/controller/main_controller.dart';
 import 'package:beta_agric/screens/donate_form.dart';
 import 'package:beta_agric/screens/donations.dart';
 import 'package:beta_agric/widgets/events_card.dart';
@@ -137,6 +138,7 @@ class EventsList extends StatelessWidget {
 
                       InkWell(
                         onTap: () {
+                          MainController.to.setEvents("twitter");
                           Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => const EventsCard(),
                           ));

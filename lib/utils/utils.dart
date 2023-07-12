@@ -86,4 +86,8 @@ class Utils {
               ));
         });
   }
+
+  static void dismissLoader() {
+    SmartDialog.dismiss(tag: "Loader");
+  }
 }

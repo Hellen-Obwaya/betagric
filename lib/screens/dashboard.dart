@@ -1,6 +1,4 @@
-import 'package:beta_agric/screens/community.dart';
 import 'package:beta_agric/screens/donations.dart';
-import 'package:beta_agric/screens/drone.dart';
 import 'package:beta_agric/screens/events_list.dart';
 import 'package:beta_agric/screens/extensions.dart';
 
@@ -112,8 +110,8 @@ class Dashboard extends StatelessWidget {
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
+                          width: MediaQuery.of(context).size.width * .34,
+                          height: MediaQuery.of(context).size.height * .4,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("images/seedlings.jpg"),
@@ -129,7 +127,7 @@ class Dashboard extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 15),
+                                  fontSize: 20),
                             ),
                           ),
                         ),
@@ -143,11 +141,11 @@ class Dashboard extends StatelessWidget {
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
+                          width: MediaQuery.of(context).size.width * .34,
+                          height: MediaQuery.of(context).size.height * .4,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("images/discussion.jpg"),
+                                image: AssetImage("images/goosebirds.jpg"),
                                 fit: BoxFit.cover,
                                 colorFilter: ColorFilter.mode(
                                     Colors.black.withOpacity(0.4),
@@ -160,7 +158,7 @@ class Dashboard extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 15),
+                                  fontSize: 20),
                             ),
                           ),
                         ),
@@ -169,44 +167,13 @@ class Dashboard extends StatelessWidget {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const Donations(),
-                          ));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage("images/harvesting.jpg"),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.4),
-                                    BlendMode.darken)),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Crop\nPractices",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          ),
-                        ),
-                      ),
-                      //FORTH CONTAINER
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => const ExtensionServices(),
                           ));
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
+                          width: MediaQuery.of(context).size.width * .34,
+                          height: MediaQuery.of(context).size.height * .4,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("images/maizefarm.jpg"),
@@ -222,284 +189,7 @@ class Dashboard extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Container(
-                width: Get.width,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      //FIRST CONTAINER
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const Donations(),
-                          ));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage("images/soils.jpg"),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.4),
-                                    BlendMode.darken)),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Soil\nTesting",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          ),
-                        ),
-                      ),
-                      //SECOND CONTAINER
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const EventsList(),
-                          ));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage("images/calendar.jpg"),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.4),
-                                    BlendMode.darken)),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Crop Calendar",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          ),
-                        ),
-                      ),
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const Donations(),
-                          ));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage("images/videos.jpg"),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.4),
-                                    BlendMode.darken)),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Videos",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          ),
-                        ),
-                      ),
-
-                      //FORTH CONTAINER
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const Community(),
-                          ));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage("images/comm.jpg"),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.4),
-                                    BlendMode.darken)),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Community",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 14),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Container(
-                width: Get.width,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      //FIRST CONTAINER
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const Drones(),
-                          ));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage("images/drones.jpg"),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.4),
-                                    BlendMode.darken)),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Drone\nService",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          ),
-                        ),
-                      ),
-                      //SECOND CONTAINER
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const EventsList(),
-                          ));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage("images/urea.jpg"),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.4),
-                                    BlendMode.darken)),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Shop",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          ),
-                        ),
-                      ),
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const Donations(),
-                          ));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage("images/prices.jpg"),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.4),
-                                    BlendMode.darken)),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Market\nPrices",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          ),
-                        ),
-                      ),
-                      //FORTH CONTAINER
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const ExtensionServices(),
-                          ));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .20,
-                          height: MediaQuery.of(context).size.height * .2,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage("images/news.jpg"),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.4),
-                                    BlendMode.darken)),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "News\nBlogs",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
+                                  fontSize: 20),
                             ),
                           ),
                         ),
