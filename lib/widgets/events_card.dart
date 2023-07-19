@@ -66,7 +66,8 @@ class EventsCard extends StatelessWidget {
                             color: Colors.grey,
                             child: CircleAvatar(
                               backgroundColor: Colors.grey,
-                              backgroundImage: AssetImage("images/${singleEvent.value["type"]}.jpg"),
+                              backgroundImage: AssetImage(
+                                  "images/${singleEvent.value["type"]}.jpg"),
                             ),
                           ),
                           SizedBox(width: 10),

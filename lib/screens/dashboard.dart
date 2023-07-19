@@ -110,8 +110,8 @@ class Dashboard extends StatelessWidget {
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .34,
-                          height: MediaQuery.of(context).size.height * .4,
+                          width: MediaQuery.of(context).size.width * .32,
+                          height: MediaQuery.of(context).size.height * .2,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("images/seedlings.jpg"),
@@ -123,7 +123,7 @@ class Dashboard extends StatelessWidget {
                           ),
                           child: Center(
                             child: Text(
-                              "Donate\nSeedlings and\nTools",
+                              "Donate\nSeedlings\nTools",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
@@ -141,11 +141,11 @@ class Dashboard extends StatelessWidget {
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .34,
-                          height: MediaQuery.of(context).size.height * .4,
+                          width: MediaQuery.of(context).size.width * .32,
+                          height: MediaQuery.of(context).size.height * .2,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("images/goosebirds.jpg"),
+                                image: AssetImage("images/microphone.jpg"),
                                 fit: BoxFit.cover,
                                 colorFilter: ColorFilter.mode(
                                     Colors.black.withOpacity(0.4),
@@ -172,8 +172,8 @@ class Dashboard extends StatelessWidget {
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .34,
-                          height: MediaQuery.of(context).size.height * .4,
+                          width: MediaQuery.of(context).size.width * .32,
+                          height: MediaQuery.of(context).size.height * .2,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("images/maizefarm.jpg"),

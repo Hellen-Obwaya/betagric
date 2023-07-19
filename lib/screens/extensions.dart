@@ -106,8 +106,8 @@ class ExtensionServices extends StatelessWidget {
                       },
                       child: Container(
                         padding: EdgeInsets.all(10),
-                        width: MediaQuery.of(context).size.width * .35,
-                        height: MediaQuery.of(context).size.height * .4,
+                        width: MediaQuery.of(context).size.width * .34,
+                        height: MediaQuery.of(context).size.height * .2,
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("images/tomatoes.jpg"),
@@ -119,7 +119,7 @@ class ExtensionServices extends StatelessWidget {
                         ),
                         child: Center(
                           child: Text(
-                            "Appointment with\nAgronomist",
+                            "Book Appointment \nAgronomist",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -137,11 +137,11 @@ class ExtensionServices extends StatelessWidget {
                       },
                       child: Container(
                         padding: EdgeInsets.all(10),
-                        width: MediaQuery.of(context).size.width * .35,
-                        height: MediaQuery.of(context).size.height * .4,
+                        width: MediaQuery.of(context).size.width * .34,
+                        height: MediaQuery.of(context).size.height * .2,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("images/cow.jpg"),
+                              image: AssetImage("images/eggs.jpg"),
                               fit: BoxFit.cover,
                               colorFilter: ColorFilter.mode(
                                   Colors.black.withOpacity(0.4),

@@ -111,8 +111,8 @@ class EventsList extends StatelessWidget {
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .34,
-                          height: MediaQuery.of(context).size.height * .4,
+                          width: MediaQuery.of(context).size.width * .32,
+                          height: MediaQuery.of(context).size.height * .2,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("images/events.jpg"),
@@ -145,8 +145,8 @@ class EventsList extends StatelessWidget {
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .36,
-                          height: MediaQuery.of(context).size.height * .4,
+                          width: MediaQuery.of(context).size.width * .32,
+                          height: MediaQuery.of(context).size.height * .2,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("images/twitter.jpg"),
@@ -177,8 +177,8 @@ class EventsList extends StatelessWidget {
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .34,
-                          height: MediaQuery.of(context).size.height * .4,
+                          width: MediaQuery.of(context).size.width * .32,
+                          height: MediaQuery.of(context).size.height * .2,
                           decoration: BoxDecoration(
                             color: Color.fromARGB(255, 6, 65, 8),
                             borderRadius: BorderRadius.circular(25),
@@ -209,8 +209,8 @@ class EventsList extends StatelessWidget {
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 20),
-                          width: MediaQuery.of(context).size.width * .34,
-                          height: MediaQuery.of(context).size.height * .4,
+                          width: MediaQuery.of(context).size.width * .32,
+                          height: MediaQuery.of(context).size.height * .2,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("images/tiktok.jpg"),
